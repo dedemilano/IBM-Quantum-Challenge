@@ -13,3 +13,21 @@ Through this lab you will learn how to set up quantum states using Qiskit, and h
 Qiskit states, the new and the old
 VQE with Qiskit 1.0
 Let's get started!
+
+
+Prologue - What is the transpiler?
+Let's start with a hypothetical question:
+
+When someone hands you their car keys and says "will you fill my car up with fuel?" - how do you know what to do?
+
+Sure, you have your driver's license, but what type of car do they have? Where is their gear shifter? How do you turn on the blinker to turn the corner, or open the fuel tank once your arrive? What if it's an electric car that doesn't even have a fuel tank??
+
+Luckily, the human brain is smart. It is able to take a set of instructions and adapt them to the vehicle being used.
+
+That, in essence, is the transpiler.
+
+Transpilation is the process of taking a given input circuit and rewriting it to an equivalent circuit for a specific quantum device, and/or to optimize the circuit for execution on a real quantum system.
+
+This is necessary because not all quantum devices work the same way. The instructions you send to one device might not be compatible with a different quantum backend. Transpilation operates in terms of a device's basis gate set, the topology of the quantum chips, timing constraints, and more which we will explore in this lab.
+
+The goal of a transpiler is to get the best performance from noisy quantum hardware. Most circuits must undergo a series of transformations that make them compatible with a given target device, and optimize them to reduce the effects of noise on the resulting outcomes.
