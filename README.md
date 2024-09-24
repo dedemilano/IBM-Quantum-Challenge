@@ -1,38 +1,53 @@
-Lab 0 overview
-In this lab, we'll focus on teaching you how to use these challenge notebooks, how to grade your work, and how to manage the general flow of setting up, running, and evaluating the results of your quantum code.
+# IBM Quantum Challenge
 
-To complete this and the other labs, you'll need to know a little bit about the Python programming language. Each lab contains a mixture of tutorial content, pre-written code blocks, and challenge code blocks that require you to fill in your own Qiskit code. To complete an exercise, you'll need to type the required code underneath each line that has the ## Write your code below here ## comment.
+## Overview
+Welcome to the IBM Qiskit Global Summer School 2024! This document provides an overview of the labs you will encounter, focusing on various quantum computing concepts and techniques using Qiskit.
 
-It's important to note that you should run each code cell, even if you didn't write any new code there. This ensures that when you submit your answers later on, everything is up to date. There will be one or two exceptions to this rule, depending on what type of computer you are using.
+### Lab 0: Introduction to Challenge Notebooks
+In this introductory lab, you'll learn how to use the challenge notebooks, grade your work, and manage the overall workflow for setting up, running, and evaluating the results of your quantum code.
 
+- **Prerequisites**: Familiarity with the Python programming language is essential.
+- **Structure**: Each lab contains tutorial content, pre-written code blocks, and challenge code blocks that require you to fill in your own Qiskit code.
+- **Instructions**: Complete exercises by typing the required code beneath each `## Write your code below here ##` comment. Ensure you run each code cell to keep everything up to date before submission.
 
-Welcome to lab one! This lab is designed to introduce you to some of the new capabilities and functions of Qiskit 1.0. Later challenges will develop on these capabilities further and introduce the more complex new Qiskit functionalities.
+---
 
-Through this lab you will learn how to set up quantum states using Qiskit, and how to implement an optimization algorithm using VQE. These two tasks will be set in two sections:
+### Lab 1: Introduction to Qiskit 1.0
+This lab introduces you to the new capabilities and functions of Qiskit 1.0. You'll learn how to set up quantum states and implement an optimization algorithm using the Variational Quantum Eigensolver (VQE).
 
-Qiskit states, the new and the old
-VQE with Qiskit 1.0
-Let's get started!
+- **Sections**:
+  1. Qiskit States: The New and the Old
+  2. VQE with Qiskit 1.0
 
+---
 
-Prologue - What is the transpiler?
-Let's start with a hypothetical question:
+### Prologue: What is the Transpiler?
+Transpilation is the process of taking a given input circuit and rewriting it to an equivalent circuit suitable for a specific quantum device. This is crucial as different quantum devices may have varying operational protocols.
 
-When someone hands you their car keys and says "will you fill my car up with fuel?" - how do you know what to do?
+- **Purpose**: To optimize circuits for execution on real quantum systems while minimizing the effects of noise.
+- **Key Aspects**: Transpilation considers a device's basis gate set, chip topology, and timing constraints.
 
-Sure, you have your driver's license, but what type of car do they have? Where is their gear shifter? How do you turn on the blinker to turn the corner, or open the fuel tank once your arrive? What if it's an electric car that doesn't even have a fuel tank??
+---
 
-Luckily, the human brain is smart. It is able to take a set of instructions and adapt them to the vehicle being used.
+### Lab 3: New Features in Qiskit
+In this lab, you'll get a sneak peek into exciting new features being developed for the Qiskit stack. This educational challenge is split into separate notebooks, each highlighting unique innovations.
 
-That, in essence, is the transpiler.
+- **Key Innovations**:
+  - Circuit Knitting Toolbox: Simplifies complex quantum circuits.
+  - Qiskit Serverless: Integrates quantum and classical computing seamlessly.
+  - AI-Powered Tools: Includes Qiskit Code Assistant for code generation and optimization with AI-Powered Transpiler Passes.
 
-Transpilation is the process of taking a given input circuit and rewriting it to an equivalent circuit for a specific quantum device, and/or to optimize the circuit for execution on a real quantum system.
+---
 
-This is necessary because not all quantum devices work the same way. The instructions you send to one device might not be compatible with a different quantum backend. Transpilation operates in terms of a device's basis gate set, the topology of the quantum chips, timing constraints, and more which we will explore in this lab.
+### Lab 4: Testing a Variational Quantum Classifier
+In this lab, you'll build and train a simple Variational Quantum Classifier (VQC) on an ideal backend using the Qiskit Patterns workflow.
 
-The goal of a transpiler is to get the best performance from noisy quantum hardware. Most circuits must undergo a series of transformations that make them compatible with a given target device, and optimize them to reduce the effects of noise on the resulting outcomes.
+- **Key Learning Outcomes**:
+  - Understand the impact of noise on VQC performance.
+  - Learn techniques to reduce VQC depth.
+  - Run the resulting circuit on quantum hardware to observe the effects of error suppression and error mitigation techniques.
 
-Welcome to Lab 3! Today, we are thrilled to give you an exclusive sneak peek into some of the exciting new features that are being developed for the Qiskit stack. This educational challenge is split into separate notebooks, each showcasing a unique and groundbreaking innovation and invites you to explore and test these new features. Dive in to explore tools like the Circuit Knitting Toolbox to simplify complex quantum circuits, experience the workflow to setup seamless integration of quantum and classical computing with Qiskit Serverless and have a chance to leverage AI-Powered tools like the Qiskit Code Assistant for code generation and circuit optimization with AI-Powered Transpiler Passes. Dive in and discover how these innovations are set to revolutionize quantum development!
+---
 
-Lab 4: Testing a Variational Quantum Classifier on a real backend
-In this lab, you will learn how to build and train a simple Variational Quantum Classifier (VQC) on an ideal backend using the Qiskit Patterns workflow. Once the VQC is trained, you will experience how the presence of noise has an impact on its performance. Finally, you will learn how to reduce the depth of the VQC and then run the resulting circuit on quantum hardware to see how error suppression and error mitigation techniques have an impact on the results.
+## Getting Started
+Let's dive in and explore the fascinating world of quantum computing with Qiskit! Follow the instructions in each
